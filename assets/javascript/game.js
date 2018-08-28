@@ -1,6 +1,6 @@
 
 
-        var techArr = ['alert','dirt','hurt']
+        var techArr = ['cybersecurity','domain','encryption','framework','compression','javaScript','python','windows','wireless','macintosh']
         var userGuess =[]
         var correctGuess= []
         var displayedGuess = document.getElementById('displayedGuess')
@@ -44,6 +44,7 @@
         
 
         if(wordToGuess == hiddenGuess){
+            document.getElementById('hiddenGuess').innerHTML = wordToGuess;
             userGuess = [];
             document.getElementById('displayedGuess').innerHTML = userGuess;
             alert('you win');
@@ -54,14 +55,17 @@
        
  
 
-        if(userGuess.length == 6){
+        if(userGuess.length == 10){
             
             userGuess = [];
             document.getElementById('displayedGuess').innerHTML = userGuess;
-            alert('you lose');
+            
             wordToGuess = techArr[Math.floor(Math.random() * techArr.length)]
+            hiddenGuess = wordToGuess.replace(/./g, '-');
             document.getElementById('hiddenGuess').innerHTML = hiddenGuess;
-            document.getElementById('hiddenGuess').innerHTML = wordToGuess.replace(/./g, '-');
+            correctGuess= []
+            userGuess =[]
+            alert('you lose');
         }
         
     }

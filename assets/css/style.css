@@ -1,0 +1,13 @@
+body{
+    background-image: url(../images/matrix.gif);
+    color: white;
+    text-align: center;
+}
+h1{
+
+    background-color: black;
+    margin: auto;
+    margin-bottom: 15px; 
+    padding: 2%;
+    width: 400px;
+}
