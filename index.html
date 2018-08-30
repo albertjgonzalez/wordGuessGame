@@ -3,17 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-            <h1>Crack The Code!</h1>
+        <div class="terminal_window">
+                <header>
+                  <div class="red_btn button"></div>
+                  <div class="green_btn button"></div>
+                  <div class="yellow_btn button"></div>
+                </header>
+                <div class="terminal_window">
+                  <div id="typed-strings" class="terminal_text">
+                        <div class="container">
+                              <div id="instructions">
+                                  <h1>Crack The Code! <br> Press any key to start!</h1>
+                              </div>
+                                
+                    
+                                <h1 id="displayedGuess"></h1>
+                    
+                                <h2 id="guessesLeft"></h2>
+                            
+                                <h1 id="hiddenGuess"></h1>
 
-            <h1 id="displayedGuess"></h1>
-        
-            <h1 id="hiddenGuess"></h1>
-    </div>
+                                <h1 id="result"></h1>
+
+                                <div id="resetButton" class="blue_btn button">Reset</div>
+                        </div>
+                        
+                  </div>
+                  <span id="typed"></span>
+                </div>
+                
+              </div>
     
     
    
